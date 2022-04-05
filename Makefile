@@ -11,3 +11,4 @@ RUN: main.o
 
 clean :
 	rm ${OBJS} main
+	rm ds*

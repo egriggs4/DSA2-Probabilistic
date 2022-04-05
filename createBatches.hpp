@@ -19,12 +19,12 @@ class CreateBatches{
         std::string fileName4 = "t4.txt";
         std::string batchFile = "";
         std::ifstream infile;
-        std::ifstream outfile;
         int numBatches = 0; //number of batches of items
         int itemsPerBatch = 0; // number of items in each batch
         int percentBadBatches = 0; // percent of batches containing bad items
         int percentBadItems = 0; // percent of items that are bad in a bed set
         int numSampled = 0; // number of items sampled from each set
+        int totalBad = 0;
         int countBad = 0;
         int maxBad = 0; //max number of bad items in a bad set
         int minBad = 0; // min number of bad items in a bad set
@@ -33,9 +33,9 @@ class CreateBatches{
        // CreateBatches();
         bool openFile(std::string fileName);
         void readFile();
-       // void writeFiles();
+        void writeFiles();
         void printData();
-      //  float getAverageNumBad();
+        float getAverageNumBad();
         //int getMaxBad();
         //int getMinBad();
         
