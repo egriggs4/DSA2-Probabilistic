@@ -30,13 +30,15 @@ class CreateBatches{
         int minBad = 0; // min number of bad items in a bad set
         float averageNumBad = 0; // average number of bad items in a bad set
     public:
-        CreateBatches();
+       // CreateBatches();
         bool openFile(std::string fileName);
         void readFile();
-        void writeFiles();
-        float getAverageNumBad();
-        int getMaxBad();
-        int getMinBad();
+       // void writeFiles();
+        void printData();
+      //  float getAverageNumBad();
+        //int getMaxBad();
+        //int getMinBad();
+        
 };
 
 #endif //createBatches.hpp
